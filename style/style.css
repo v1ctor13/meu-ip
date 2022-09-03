@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    font-family: 'Consolas';
+    font-family: 'Lucida Console', sans-serif;
     color: white;
     font-size: 35px;
     border: 2px red solid;
@@ -29,9 +29,10 @@ body p {
 
 .details-icon {
     position: fixed;
-    top: 50%;
+    top: 85%;
     left: 50%;
     border: 2px yellow solid;
+    transform: translate(-50%, 0px);
 }
 
 @media (min-width: 576px) {

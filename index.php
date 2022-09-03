@@ -26,7 +26,7 @@
         ?>
     </div>
     <div class="details-icon text-center">
-        icon
+        <img src="img/down-arrow.png">
     </div>
     <div class="details container-fluid text-center">
         DETAILS
