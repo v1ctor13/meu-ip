@@ -8,7 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style//style.css">
   </head>
   <body class="bg-dark">
     <div class="home container-fluid text-center">
@@ -25,7 +25,7 @@
             echo '<p>' . $arr['ip'] . '</p>';
         ?>
     </div>
-    <div class="details-icon text-center">
+    <div class="arrow-icon text-center">
         <img src="img/down-arrow.png">
     </div>
     <div class="details container-fluid text-center">
