@@ -6,7 +6,6 @@ body {
     font-family: 'Lucida Console', sans-serif;
     color: white;
     font-size: 35px;
-    border: 2px red solid;
     height: 100%;
 }
 
@@ -19,19 +18,17 @@ body p {
     border: 2px blue solid;
     width: 100%;
     min-height: 100%;
-    padding-top: 50%;
-    padding-bottom: 30%;
+    padding-top: 40%;
 }
 
 .details {
-    border: 2px green solid;
+    padding: 0%;
 }
 
 .details-icon {
     position: fixed;
     top: 85%;
     left: 50%;
-    border: 2px yellow solid;
     transform: translate(-50%, 0px);
 }
 
@@ -41,9 +38,18 @@ body p {
         font-size: 75px;
     }
     
-    p {
+    body p {
         font-size: 60px;
     }
+
+    .home {
+        padding-top: 10%;
+    }
+
+    .details-icon {
+        top: 75%;
+    }
+
 }
 
 @media (min-width: 768px) {
@@ -52,8 +58,16 @@ body p {
         font-size: 90px;
     }
     
-    p {
-        font-size: 70px;
+    body p {
+        font-size: 100px;
+    }
+
+    .home {
+        padding-top: 10%;
+    }
+
+    .details-icon {
+        top: 75%;
     }
 }
 
@@ -63,8 +77,17 @@ body p {
         font-size: 105px;
     }
     
-    p {
+    body p {
         font-size: 80px;
+        margin-top: 5%;
+    }
+
+    .home {
+        padding-top: 10%;
+    }
+
+    .details-icon {
+        top: 75%;
     }
 }
 
@@ -74,7 +97,36 @@ body p {
         font-size: 120px;
     }
     
-    p {
+    body p {
         font-size: 90px;
+        margin-top: 5%;
+    }
+
+    .home {
+        padding-top: 5%;
+    }
+
+    .details-icon {
+        top: 75%;
+    }
+}
+
+@media (min-width: 1500px) {
+    body {
+        font-family: 'Consolas';
+        font-size: 120px;
+    }
+    
+    body p {
+        font-size: 90px;
+        margin-top: 2%;
+    }
+
+    .home {
+        padding-top: 2%;
+    }
+
+    .details-icon {
+        top: 70%;
     }
 }
