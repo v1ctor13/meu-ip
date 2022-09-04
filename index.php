@@ -10,11 +10,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style//style.css">
   </head>
-  <body class="bg-dark">
+  <body>
     <div class="home container-fluid text-center">
-        <div class="container-fluid text-primary"> SEU IP É: </div>
+        <div class="container-fluid text-primary"> Seu IP: </div>
         <?php
             $ch = curl_init();
+            $fodase = "meu pau";
             curl_setopt($ch, CURLOPT_URL, 'ipinfo.io/189.90.191.98?token=2730886b5981a9');
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
             curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
@@ -28,26 +29,34 @@
     <div class="arrow-icon text-center">
         <img src="img/down-arrow.png">
     </div>
-    <div class="details container-fluid text-center">
-        DETAILS
-        DETAILS
-        DETAILS
-        DETAILS
-        DETAILS
-        DETAILS
-        DETAILS
-        DETAILS
-        DETAILS
-        DETAILS
-        DETAILS
-        DETAILS
-        DETAILS
-        DETAILS
-        DETAILS
-        DETAILS
-        DETAILS
-        DETAILS
+    <div class="details container-fluid text-center bg-dark">
+        <?php
+            echo '<h1 class="text-success"> Detalhes </h1>';
+
+            $city = $arr['city'];
+            $region = $arr['region'];
+            $country = $arr['country'];
+            $postal =  $arr['postal'];
+            $timezone = $arr['timezone'];
+            $loc = $arr['loc'];
+            $org = $arr['org'];
+
+            echo "
+                <table>
+                    <tr>
+                        <td>Cidade</td>
+                        <td>$city</td>
+                    </tr>
+                </table>
+            ";
+
+            
+        ?>
     </div>
+    <footer class="text-center">
+        © by Victor <br>
+        2022
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
