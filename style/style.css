@@ -3,11 +3,12 @@ html {
 }
 
 body {
-    font-family: 'Lucida Console', sans-serif;
-    color: white;
+    font-family: 'Verdana';
+    color: rgb(21, 130, 170);
     font-size: 35px;
     height: 100%;
-    background-color: #2f3f4f;
+    background: linear-gradient(#132257, #135b5b);
+    /* background-color: #80295a; */
 }
 
     body p {
@@ -15,43 +16,37 @@ body {
         margin-top: 10%;
     }
 
-footer {
-    background-color: #1f252b;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 3vh;
-    color: gray;
-}
-
-.home {
-    width: 100%;
-    min-height: 100%;
-    padding-top: 50%;
-}
-
 .details {
-    padding-top: 5%;
-    padding-bottom: 5%;
-    background-color: darkslategray;
+    padding-top: 4vh;
+    background-color: #135b5b;
+    
 }
 
     .details table{
         text-align: center;
         font-size: 3vh;
-        width: 100%;
-        margin-top: 2vh;    
+        width: 95%;
+        margin: auto;
     }
 
         .details table td {
-            border: 1px white solid;
+            border: 1px #000000 solid;
             width: 50%;
+            color: white;
+            background-color: #363636;
         }
 
         .details table p {
-            color: greenyellow;
+            color: #79ff79;
             font-size: 3vh;
             padding-left: 2px;
             padding-right: 2px;
-        } 
+        }
+    
+    .details img {
+        margin-top: 5vh;
+        max-width: ;
+    }
 
 .arrow-icon {
     animation: arrow-icon-animation 2s;
@@ -79,6 +74,27 @@ footer {
             animation-play-state: paused;
         }
     }
+
+footer {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    background: linear-gradient( #135b5b, #e4158e);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3vh;
+    color: black;
+}
+
+    footer .contact {
+        padding-top: 3vh;
+
+    }
+
+.home {
+    width: 100%;
+    min-height: 100%;
+    padding-top: 50%;
+}
+
 
 @media (min-width: 279px) {
     body {
@@ -158,7 +174,7 @@ footer {
 @media (min-width: 992px) {
     body {
         font-family: 'Consolas';
-        font-size: 105px;
+        font-size: 150px;
     }
     
     body p {

@@ -1,7 +1,7 @@
-<!doctype html>
+<!doctype html
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Meu ip</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,9 +12,9 @@
   </head>
   <body>
     <div class="home container-fluid text-center">
-        <div class="container-fluid text-primary"> Seu IP: </div>
+        <div> Meu ip</div>
         <?php
-            include 'imprimirTabela.php';
+            include("imprimirTabela.php");
 
             $ch = curl_init();
 
@@ -31,17 +31,27 @@
     <div class="arrow-icon text-center">
         <img src="img/down-arrow.png">
     </div>
-    <div class="details container-fluid text-center ">
+    <div class="details text-center ">
         <?php
-
-            echo '<h1 class="text-success"> Detalhes </h1>';
-
             imprimirTabela($arr);
+            $coord = explode(",", $arr['loc']);
+            echo "<img 
+                width=\"600\" 
+                height=\"400\" 
+                src=\"https://api.geoapify.com/v1/geocode/reverse?lat=-2.5356696496368727&lon=-44.27797619293864&format=json&apiKey=b7c6e4869eb64375ade85fca23f5f8b0\" 
+                alt=\"Area map\"
+            >";
         ?>
     </div>
     <footer class="text-center">
-        © by Victor <br>
-        2022
+        © by v1ctor <br>
+        2022 <br>
+
+        <div class="contact">
+            <a href="https://github.com/v1ctorvinicius" target="_blank"><img src="img/github.png"></a> 
+            <a href="https://www.linkedin.com/in/victor-santos-3b0908244/" target="_blank"><img src="img/linkedin.png"></a> 
+            <a href="http://v1ctor.epizy.com"><img src="img/portfolio.png" target="_blank"></a> 
+        </div>
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
