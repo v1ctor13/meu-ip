@@ -14,7 +14,7 @@
     <div class="home container-fluid text-center">
         <div class="container-fluid text-primary"> Seu IP: </div>
         <?php
-            include 'util.php';
+            include 'imprimirTabela.php';
 
             $ch = curl_init();
 
@@ -31,7 +31,7 @@
     <div class="arrow-icon text-center">
         <img src="img/down-arrow.png">
     </div>
-    <div class="details container-fluid text-center bg-dark">
+    <div class="details container-fluid text-center ">
         <?php
 
             echo '<h1 class="text-success"> Detalhes </h1>';

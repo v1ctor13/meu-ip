@@ -10,10 +10,10 @@ body {
     background-color: #2f3f4f;
 }
 
-body p {
-    font-size: 30px;
-    margin-top: 10%;
-}
+    body p {
+        font-size: 30px;
+        margin-top: 10%;
+    }
 
 footer {
     background-color: #1f252b;
@@ -31,20 +31,27 @@ footer {
 .details {
     padding-top: 5%;
     padding-bottom: 5%;
+    background-color: darkslategray;
 }
 
-.details table{
-    border: 3px solid;
-    text-align: center;
-    font-size: 2vh;
-    width: 100%;
-    display: flex;
-    flex-direction:row;
-}
+    .details table{
+        text-align: center;
+        font-size: 3vh;
+        width: 100%;
+        margin-top: 2vh;    
+    }
 
-table > p{
-    color: red;
-} 
+        .details table td {
+            border: 1px white solid;
+            width: 50%;
+        }
+
+        .details table p {
+            color: greenyellow;
+            font-size: 3vh;
+            padding-left: 2px;
+            padding-right: 2px;
+        } 
 
 .arrow-icon {
     animation: arrow-icon-animation 2s;
@@ -58,19 +65,47 @@ table > p{
     visibility: hidden;
 }
 
-@keyframes arrow-icon-animation {
-    0% {
-        visibility: visible;
-        transform: translate(-50%, 0px);
+    @keyframes arrow-icon-animation {
+        0% {
+            visibility: visible;
+            transform: translate(-50%, 0px);
+        }
+        50% {
+            transform: translate(-50%, -60px);
+        }
+        100% {
+            transform: translate(-50%, 0px);
+            visibility: hidden;
+            animation-play-state: paused;
+        }
     }
-    50% {
-        transform: translate(-50%, -60px);
+
+@media (min-width: 279px) {
+    body {
+        font-family: 'Consolas';
+        font-size: 50px;
     }
-    100% {
-        transform: translate(-50%, 0px);
-        visibility: hidden;
-        animation-play-state: paused;
+    
+    body p {
+        font-size: 35px;
     }
+
+    .home {
+        padding-top: 50%;
+    }
+
+    .arrow-icon {
+        top: 75%;
+    }
+
+    .details table {
+        font-size: 2.5vh;
+    }
+
+        .details table p{
+            font-size: 2.3vh;
+        }
+    
 }
 
 @media (min-width: 576px) {
@@ -110,6 +145,14 @@ table > p{
     .arrow-icon {
         top: 85%;
     }
+
+    .details table {
+        font-size: 4vh;
+    }
+
+        .details table p{
+            font-size: 3vh;
+        }
 }
 
 @media (min-width: 992px) {
@@ -130,6 +173,15 @@ table > p{
     .arrow-icon {
         top: 75%;
     }
+
+    .details table {
+        font-size: 5vh;
+        margin-top: 6vh;
+    }
+
+        .details table p{
+            font-size: 4vh;
+        }
 }
 
 @media (min-width: 1200px) {
@@ -150,6 +202,12 @@ table > p{
     .arrow-icon {
         top: 75%;
     }
+
+    .details table {
+        max-width: 100%;
+    }
+
+    
 }
 
 @media (min-width: 1500px) {
