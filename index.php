@@ -14,8 +14,10 @@
     <div class="home container-fluid text-center">
         <div class="container-fluid text-primary"> Seu IP: </div>
         <?php
+            include 'util.php';
+
             $ch = curl_init();
-            $fodase = "meu pau";
+
             curl_setopt($ch, CURLOPT_URL, 'ipinfo.io/189.90.191.98?token=2730886b5981a9');
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
             curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
@@ -31,7 +33,6 @@
     </div>
     <div class="details container-fluid text-center bg-dark">
         <?php
-            include 'util.php';
 
             echo '<h1 class="text-success"> Detalhes </h1>';
 
