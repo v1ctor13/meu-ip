@@ -7,11 +7,19 @@ body {
     color: white;
     font-size: 35px;
     height: 100%;
+    background-color: #2f3f4f;
 }
 
 body p {
     font-size: 30px;
     margin-top: 10%;
+}
+
+footer {
+    background-color: #1f252b;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3vh;
+    color: gray;
 }
 
 .home {
@@ -21,21 +29,38 @@ body p {
 }
 
 .details {
-    padding: 0%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
+
+.details table{
+    border: 3px solid;
+    text-align: center;
+    font-size: 2vh;
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+}
+
+table > p{
+    color: red;
+} 
 
 .arrow-icon {
     animation: arrow-icon-animation 2s;
-    animation-iteration-count: 3;
-    animation-delay: 3s;
+    animation-iteration-count: 2;
+    animation-delay: 2s;
+    animation-fill-mode: none;
     position: fixed;
     top: 85%;
     left: 50%;
     transform: translate(-50%, 0px);
+    visibility: hidden;
 }
 
 @keyframes arrow-icon-animation {
     0% {
+        visibility: visible;
         transform: translate(-50%, 0px);
     }
     50% {
@@ -43,6 +68,8 @@ body p {
     }
     100% {
         transform: translate(-50%, 0px);
+        visibility: hidden;
+        animation-play-state: paused;
     }
 }
 
