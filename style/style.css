@@ -2,24 +2,23 @@ html {
     height: 100%;
 }
 
-body {
-    font-family: 'Verdana';
+.home {
+    font-family: 'Courier new';
     color: rgb(21, 130, 170);
-    font-size: 35px;
-    height: 100%;
     background: linear-gradient(#132257, #135b5b);
-    /* background-color: #80295a; */
 }
 
-    body p {
-        font-size: 30px;
-        margin-top: 10%;
-    }
+.home p {
+    font-size: 35px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 .details {
     padding-top: 4vh;
     background-color: #135b5b;
-    
 }
 
     .details table{
@@ -34,6 +33,9 @@ body {
             width: 50%;
             color: white;
             background-color: #363636;
+            padding-top: 2.5vh;
+            padding-bottom: 2.5vh;
+            
         }
 
         .details table p {
@@ -44,8 +46,9 @@ body {
         }
     
     .details img {
-        margin-top: 5vh;
-        max-width: ;
+        padding-top: 4vh;
+        margin: auto;
+        width: 100%;
     }
 
 .arrow-icon {
@@ -97,45 +100,42 @@ footer {
 
 
 @media (min-width: 279px) {
-    body {
-        font-family: 'Consolas';
+    .home {
+        font-family: 'Courier new';
         font-size: 50px;
     }
     
-    body p {
+    .home p {
         font-size: 35px;
-    }
-
-    .home {
-        padding-top: 50%;
     }
 
     .arrow-icon {
         top: 75%;
     }
 
-    .details table {
-        font-size: 2.5vh;
-    }
+        .details table {
+            font-size: 2.5vh;
+        }
 
         .details table p{
             font-size: 2.3vh;
         }
-    
+
+        .details img {
+            width: 95%;
+            padding-top: 6vh;
+        }
+
 }
 
 @media (min-width: 576px) {
-    body {
+    .home {
         font-family: 'Consolas';
         font-size: 75px;
     }
     
-    body p {
+    .home p {
         font-size: 60px;
-    }
-
-    .home {
-        padding-top: 50%;
     }
 
     .arrow-icon {
@@ -145,17 +145,13 @@ footer {
 }
 
 @media (min-width: 768px) {
-    body {
+    .home {
         font-family: 'Consolas';
         font-size: 90px;
     }
     
-    body p {
+    .home p {
         font-size: 100px;
-    }
-
-    .home {
-        padding-top: 50%;
     }
 
     .arrow-icon {
@@ -172,47 +168,52 @@ footer {
 }
 
 @media (min-width: 992px) {
-    body {
+    .home {
         font-family: 'Consolas';
         font-size: 150px;
     }
     
-    body p {
+    .home p {
         font-size: 80px;
         margin-top: 5%;
-    }
-
-    .home {
-        padding-top: 10%;
+        top: 30%;
     }
 
     .arrow-icon {
         top: 75%;
     }
 
-    .details table {
-        font-size: 5vh;
-        margin-top: 6vh;
-    }
+        .details table {
+            font-size: 3vh;
+            margin-top: 3vh;
+            width: 50%;
+        }
+
+        .details table td {
+            padding-top: 3vh;
+            padding-bottom: 3vh;
+        }
 
         .details table p{
-            font-size: 4vh;
+            font-size: 3vh;
+        }
+
+        .details img {
+            width: 50%;
+            padding-top: 6vh;
         }
 }
 
 @media (min-width: 1200px) {
-    body {
+    .home {
         font-family: 'Consolas';
         font-size: 120px;
     }
     
-    body p {
+    .home p {
         font-size: 90px;
         margin-top: 5%;
-    }
-
-    .home {
-        padding-top: 12%;
+        top: 35%;
     }
 
     .arrow-icon {
@@ -227,18 +228,14 @@ footer {
 }
 
 @media (min-width: 1500px) {
-    body {
+    .home {
         font-family: 'Consolas';
         font-size: 120px;
     }
     
-    body p {
+    .home p {
         font-size: 90px;
         margin-top: 2%;
-    }
-
-    .home {
-        padding-top: 12%;
     }
 
     .arrow-icon {
@@ -247,18 +244,14 @@ footer {
 }
 
 @media (min-width: 1900px) {
-    body {
+    .home {
         font-family: 'Consolas';
         font-size: 120px;
     }
     
-    body p {
+    .home p {
         font-size: 90px;
         margin-top: 2%;
-    }
-
-    .home {
-        padding-top: 10%;
     }
 
     .arrow-icon {
@@ -267,18 +260,14 @@ footer {
 }
 
 @media (min-width: 2550px) {
-    body {
+    .home {
         font-family: 'Consolas';
         font-size: 300px;
     }
     
-    body p {
+    .home p {
         font-size: 300px;
         margin-top: 2%;
-    }
-
-    .home {
-        padding-top: 10%;
     }
 
     .arrow-icon {
@@ -287,18 +276,14 @@ footer {
 }
 
 @media (min-width: 3800) {
-    body {
+    .home {
         font-family: 'Consolas';
         font-size: 120px;
     }
     
-    body p {
+    .home p {
         font-size: 90px;
         margin-top: 20%;
-    }
-
-    .home {
-        padding-top: 50%;
     }
 
     .arrow-icon {
@@ -307,18 +292,14 @@ footer {
 }
 
 @media (min-width: 7600) {
-    body {
+    .home {
         font-family: 'Consolas';
         font-size: 600px;
     }
     
-    body p {
+    .home p {
         font-size: 90px;
         margin-top: 20%;
-    }
-
-    .home {
-        padding-top: 50%;
     }
 
     .arrow-icon {

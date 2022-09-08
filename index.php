@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="style//style.css">
   </head>
   <body>
-    <div class="home container-fluid text-center">
-        <div> Meu ip</div>
+    <div class="home">
         <?php
             include("imprimirTabela.php");
 
@@ -31,16 +30,12 @@
     <div class="arrow-icon text-center">
         <img src="img/down-arrow.png">
     </div>
-    <div class="details text-center ">
+    <div class="details text-center">
         <?php
             imprimirTabela($arr);
             $coord = explode(",", $arr['loc']);
-            echo "<img 
-                width=\"600\" 
-                height=\"400\" 
-                src=\"https://api.geoapify.com/v1/geocode/reverse?lat=-2.5356696496368727&lon=-44.27797619293864&format=json&apiKey=b7c6e4869eb64375ade85fca23f5f8b0\" 
-                alt=\"Area map\"
-            >";
+            
+            echo "<img src=\"https://dev.virtualearth.net/REST/v1/Imagery/Map/Road/". $arr['loc'] ."/12?mapSize=800,800&mapLayer=Basemap,Buildings&key=AlLKUFpKxYkRLKHj1HgaIxdlmapv50uc4cGjXE-6uLfF_jx7nwkuksGDtg-O2_iU\">"
         ?>
     </div>
     <footer class="text-center">

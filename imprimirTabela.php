@@ -1,6 +1,7 @@
 <?php
 
     function imprimirTabela($arr){
+
         $city = $arr['city'];
         $region = $arr['region'];
         $country = $arr['country'];
@@ -8,7 +9,6 @@
         $timezone = $arr['timezone'];
         $loc = $arr['loc'];
         $org = $arr['org'];
-        
 
         echo "
             <table>
