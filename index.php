@@ -17,7 +17,7 @@
 
             $ch = curl_init();
 
-            curl_setopt($ch, CURLOPT_URL, 'ipinfo.io/189.90.191.98?token=2730886b5981a9');
+            curl_setopt($ch, CURLOPT_URL, 'ipinfo.io/189.90.191.98?token={api_key}');
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
             curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 
@@ -35,7 +35,7 @@
             imprimirTabela($arr);
             $coord = explode(",", $arr['loc']);
 
-            echo "<img src=\"https://dev.virtualearth.net/REST/v1/Imagery/Map/Road/". $arr['loc'] ."/12?mapSize=800,800&mapLayer=Basemap,Buildings&key=AlLKUFpKxYkRLKHj1HgaIxdlmapv50uc4cGjXE-6uLfF_jx7nwkuksGDtg-O2_iU\">"
+            echo "<img src=\"https://dev.virtualearth.net/REST/v1/Imagery/Map/Road/". $arr['loc'] ."/12?mapSize=800,800&mapLayer=Basemap,Buildings&key={api_key}\">"
         ?>
     </div>
     <footer class="text-center">
