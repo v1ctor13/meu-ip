@@ -1,308 +1,307 @@
 html {
-    height: 100%;
+  height: 100%;
 }
 
 .home {
-    font-family: 'Courier new';
-    color: rgb(21, 130, 170);
-    background: linear-gradient(#132257, #135b5b);
+  font-family: "Courier new";
+  color: rgb(21, 130, 170);
+  background: linear-gradient(#132257, #135b5b);
+  width: 100%;
+  height: 90vh;
+  /* padding-top: 50%; */
 }
 
 .home p {
-    font-size: 35px;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translateX(-50%);
+  font-size: 35px;
+  margin-bottom: 0;
+  border: 1px solid red;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%); */
 }
 
 .details {
-    padding-top: 4vh;
-    background-color: #135b5b;
+  padding-top: 4vh;
+  background-color: #135b5b;
 }
 
-    .details table{
-        text-align: center;
-        font-size: 3vh;
-        width: 95%;
-        margin: auto;
-    }
+.details table {
+  text-align: center;
+  font-size: 3vh;
+  width: 95%;
+  margin: auto;
+}
 
-        .details table td {
-            border: 1px #000000 solid;
-            width: 50%;
-            color: white;
-            background-color: #363636;
-            padding-top: 2.5vh;
-            padding-bottom: 2.5vh;
-            
-        }
+.details table td {
+  border: 1px #000000 solid;
+  width: 50%;
+  color: white;
+  background-color: #363636;
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+}
 
-        .details table p {
-            color: #79ff79;
-            font-size: 3vh;
-            padding-left: 2px;
-            padding-right: 2px;
-        }
-    
-    .details img {
-        padding-top: 4vh;
-        margin: auto;
-        width: 100%;
-    }
+.details table p {
+  color: #79ff79;
+  font-size: 3vh;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.details img {
+  padding-top: 4vh;
+  margin: auto;
+  width: 100%;
+}
 
 .arrow-icon {
-    animation: arrow-icon-animation 2s;
-    animation-iteration-count: 2;
-    animation-delay: 2s;
-    animation-fill-mode: none;
-    position: fixed;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, 0px);
-    visibility: hidden;
+  animation: arrow-icon-animation 2s;
+  animation-iteration-count: 2;
+  animation-delay: 2s;
+  animation-fill-mode: none;
+  position: fixed;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, 0px);
+  visibility: hidden;
 }
-
-    @keyframes arrow-icon-animation {
-        0% {
-            visibility: visible;
-            transform: translate(-50%, 0px);
-        }
-        50% {
-            transform: translate(-50%, -60px);
-        }
-        100% {
-            transform: translate(-50%, 0px);
-            visibility: hidden;
-            animation-play-state: paused;
-        }
-    }
 
 footer {
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    background: linear-gradient( #135b5b, #e4158e);
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 3vh;
-    color: black;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  background: linear-gradient(#135b5b, #e4158e);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 3vh;
+  color: black;
 }
 
-    footer .contact {
-        padding-top: 3vh;
-
-    }
-
-.home {
-    width: 100%;
-    min-height: 100%;
-    padding-top: 50%;
+footer .contact {
+  padding-top: 3vh;
 }
 
-
-@media (min-width: 279px) {
-    .home {
-        font-family: 'Courier new';
-        font-size: 50px;
-    }
-    
-    .home p {
-        font-size: 35px;
-    }
-
-    .arrow-icon {
-        top: 75%;
-    }
-
-        .details table {
-            font-size: 2.5vh;
-        }
-
-        .details table p{
-            font-size: 2.3vh;
-        }
-
-        .details img {
-            width: 95%;
-            padding-top: 6vh;
-        }
-
-}
-
-@media (min-width: 576px) {
-    .home {
-        font-family: 'Consolas';
-        font-size: 75px;
-    }
-    
-    .home p {
-        font-size: 60px;
-    }
-
-    .arrow-icon {
-        top: 75%;
-    }
-
-}
-
-@media (min-width: 768px) {
-    .home {
-        font-family: 'Consolas';
-        font-size: 90px;
-    }
-    
-    .home p {
-        font-size: 100px;
-    }
-
-    .arrow-icon {
-        top: 85%;
-    }
-
-    .details table {
-        font-size: 4vh;
-    }
-
-        .details table p{
-            font-size: 3vh;
-        }
+@keyframes arrow-icon-animation {
+  0% {
+    visibility: visible;
+    transform: translate(-50%, 0px);
+  }
+  50% {
+    transform: translate(-50%, -60px);
+  }
+  100% {
+    transform: translate(-50%, 0px);
+    visibility: hidden;
+    animation-play-state: paused;
+  }
 }
 
 @media (min-width: 992px) {
-    .home {
-        font-family: 'Consolas';
-        font-size: 150px;
-    }
-    
-    .home p {
-        font-size: 80px;
-        margin-top: 5%;
-        top: 30%;
-    }
+  .home {
+    font-family: "Consolas";
+    font-size: 150px;
+    height: 100vh;
+  }
 
-    .arrow-icon {
-        top: 75%;
-    }
+  .home p {
+    font-size: 80px;
+    margin-bottom: 0;
+    /* top: 30%; */
+  }
 
-        .details table {
-            font-size: 3vh;
-            margin-top: 3vh;
-            width: 50%;
-        }
+  .arrow-icon {
+    top: 75%;
+  }
 
-        .details table td {
-            padding-top: 3vh;
-            padding-bottom: 3vh;
-        }
+  .details table {
+    font-size: 3vh;
+    margin-top: 3vh;
+    width: 50%;
+  }
 
-        .details table p{
-            font-size: 3vh;
-        }
+  .details table td {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+  }
 
-        .details img {
-            width: 50%;
-            padding-top: 6vh;
-        }
+  .details table p {
+    font-size: 3vh;
+  }
+
+  .details img {
+    width: 50%;
+    padding-top: 6vh;
+  }
 }
 
+/* @media (min-width: 279px) {
+  .home {
+    font-family: "Courier new";
+    font-size: 50px;
+  }
+
+  .home p {
+    font-size: 35px;
+  }
+
+  .arrow-icon {
+    top: 75%;
+  }
+
+  .details table {
+    font-size: 2.5vh;
+  }
+
+  .details table p {
+    font-size: 2.3vh;
+  }
+
+  .details img {
+    width: 95%;
+    padding-top: 6vh;
+  }
+}
+
+@media (min-width: 576px) {
+  .home {
+    font-family: "Consolas";
+    font-size: 75px;
+  }
+
+  .home p {
+    font-size: 60px;
+  }
+
+  .arrow-icon {
+    top: 75%;
+  }
+}
+
+@media (min-width: 768px) {
+  .home {
+    font-family: "Consolas";
+    font-size: 90px;
+  }
+
+  .home p {
+    font-size: 100px;
+  }
+
+  .arrow-icon {
+    top: 85%;
+  }
+
+  .details table {
+    font-size: 4vh;
+  }
+
+  .details table p {
+    font-size: 3vh;
+  }
+}
+
+
+
 @media (min-width: 1200px) {
-    .home {
-        font-family: 'Consolas';
-        font-size: 120px;
-    }
-    
-    .home p {
-        font-size: 90px;
-        margin-top: 5%;
-        top: 35%;
-    }
+  .home {
+    font-family: "Consolas";
+    font-size: 120px;
+  }
 
-    .arrow-icon {
-        top: 75%;
-    }
+  .home p {
+    font-size: 90px;
+    margin-top: 5%;
+    top: 35%;
+  }
 
-    .details table {
-        max-width: 100%;
-    }
+  .arrow-icon {
+    top: 75%;
+  }
 
-    
+  .details table {
+    max-width: 100%;
+  }
 }
 
 @media (min-width: 1500px) {
-    .home {
-        font-family: 'Consolas';
-        font-size: 120px;
-    }
-    
-    .home p {
-        font-size: 90px;
-        margin-top: 2%;
-    }
+  .home {
+    font-family: "Consolas";
+    font-size: 120px;
+  }
 
-    .arrow-icon {
-        top: 75%;
-    }
+  .home p {
+    font-size: 90px;
+    margin-top: 2%;
+  }
+
+  .arrow-icon {
+    top: 75%;
+  }
 }
 
 @media (min-width: 1900px) {
-    .home {
-        font-family: 'Consolas';
-        font-size: 120px;
-    }
-    
-    .home p {
-        font-size: 90px;
-        margin-top: 2%;
-    }
+  .home {
+    font-family: "Consolas";
+    font-size: 120px;
+  }
 
-    .arrow-icon {
-        top: 70%;
-    }
+  .home p {
+    font-size: 90px;
+    margin-top: 2%;
+  }
+
+  .arrow-icon {
+    top: 70%;
+  }
 }
 
 @media (min-width: 2550px) {
-    .home {
-        font-family: 'Consolas';
-        font-size: 300px;
-    }
-    
-    .home p {
-        font-size: 300px;
-        margin-top: 2%;
-    }
+  .home {
+    font-family: "Consolas";
+    font-size: 300px;
+  }
 
-    .arrow-icon {
-        top: 85%;
-    }
+  .home p {
+    font-size: 300px;
+    margin-top: 2%;
+  }
+
+  .arrow-icon {
+    top: 85%;
+  }
 }
 
 @media (min-width: 3800) {
-    .home {
-        font-family: 'Consolas';
-        font-size: 120px;
-    }
-    
-    .home p {
-        font-size: 90px;
-        margin-top: 20%;
-    }
+  .home {
+    font-family: "Consolas";
+    font-size: 120px;
+  }
 
-    .arrow-icon {
-        top: 80%;
-    }
+  .home p {
+    font-size: 90px;
+    margin-top: 20%;
+  }
+
+  .arrow-icon {
+    top: 80%;
+  }
 }
 
 @media (min-width: 7600) {
-    .home {
-        font-family: 'Consolas';
-        font-size: 600px;
-    }
-    
-    .home p {
-        font-size: 90px;
-        margin-top: 20%;
-    }
+  .home {
+    font-family: "Consolas";
+    font-size: 600px;
+  }
 
-    .arrow-icon {
-        top: 80%;
-    }
-}
+  .home p {
+    font-size: 90px;
+    margin-top: 20%;
+  }
+
+  .arrow-icon {
+    top: 80%;
+  }
+} */
