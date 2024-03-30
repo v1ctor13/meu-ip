@@ -14,18 +14,19 @@
 <body>
 	<div class="home">
 		<?php
-		ini_set('display_errors', 1);
-		error_reporting(E_ALL);
+		// ini_set('display_errors', 1);
+		// error_reporting(E_ALL);
 
+		include("set_env.php");
 		include("imprimirTabela.php");
 
 		$curl_session = curl_init();
 
 		$client = $_SERVER['REMOTE_ADDR'];
 
-		$ipinfo_api_key = '2730886b5981a9';
+		$ipinfo_token = getenv('IPINFO_TOKEN');
 
-		$url = 'ipinfo.io/' . $client . '?token=' . $ipinfo_api_key;
+		$url = 'ipinfo.io/' . $client . '?token=' . $ipinfo_token;
 
 		curl_setopt($curl_session, CURLOPT_URL, $url);
 		curl_setopt($curl_session, CURLOPT_RETURNTRANSFER, true);
@@ -45,9 +46,9 @@
 		<?php
 		imprimirTabela($arr);
 		$coord = explode(",", $arr['loc']);
-		$bing_maps_api_key = 'AsAsLor78DbbzNvxXP7uurIDew-xE0kIU-KzL-Z4oLQekONvm6NRP3PDWpbgqfPA';
+		$bing_maps_token = getenv('BING_MAPS_TOKEN');
 
-		echo "<img src=\"https://dev.virtualearth.net/REST/v1/Imagery/Map/Road/" . $arr['loc'] . "/12?mapSize=800,800&mapLayer=Basemap,Buildings&key=" . $bing_maps_api_key . "\">";
+		echo "<img src=\"https://dev.virtualearth.net/REST/v1/Imagery/Map/Road/" . $arr['loc'] . "/12?mapSize=800,800&mapLayer=Basemap,Buildings&key=" . $bing_maps_token . "\">";
 
 		?>
 	</div>
