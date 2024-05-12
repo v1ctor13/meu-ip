@@ -30,4 +30,4 @@ Este projeto representa uma fase inicial do meu aprendizado em desenvolvimento w
 
 # Hospedagem
 
-O projeto está hospedado no serviço [InfinityFree](https://www.infinityfree.com/), como parte do processo de aprendizado em implantação de aplicações web.
+O projeto está hospedado no serviço [InfinityFree](https://www.infinityfree.com/)
