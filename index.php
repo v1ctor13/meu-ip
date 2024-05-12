@@ -57,7 +57,7 @@
 		2022 <br>
 
 		<div class="contact">
-			<a href="https://github.com/v1ctorvinicius" target="_blank"><img src="img/github.png"></a>
+			<a href="https://github.com/v1ctorvinicius/meu-ip" target="_blank"><img src="img/github.png"></a>
 			<a href="https://www.linkedin.com/in/victor-santos-3b0908244/" target="_blank"><img src="img/linkedin.png"></a>
 			<a href="http://v1ctor.epizy.com"><img src="img/portfolio.png" target="_blank"></a>
 		</div>
